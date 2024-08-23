@@ -14,7 +14,7 @@ Also, see [Android's documentation for setting up a calling app](https://develo
 ![](attachment/a66eab91319a39f532003e703cdf3604.png)
 
 ## For your configuration, you will need to use a p12 certificate with VoIP capabilities added to it
-> [!Todo]
+> [!Note]
 > Follow the steps on generating a p12 by requesting from a certificate authority and saving the file that you will upload to your Apple Developer Dashboard and then return here for next steps. 
 
 Once you have a Certificate Signing Request saved, you can go to your Apple Developer Dashboard and open the Certificates page to generate a new Certificate. 
@@ -101,7 +101,11 @@ curl --location 'https://onesignal.com/api/v1/apps/APP_ID/users' \
 # Sending a test VoIP message
 When sending a voip message, we are changing a parameter in the request made to Apple's servers. This change only takes place if you specify that the message you're sending is intended to be sent as "voip" using the "apns_push_type_override" parameter:
 ```shell
-curl --location 'https://onesignal.com/api/v1/notifications' \
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
 --header 'Authorization: Basic API_KEY' \
 --header 'Content-Type: application/json' \
 --header 'Cookie: __cf_bm=CRiGUCcTeeTC89JSRTQ2Eu1bMQkfFVhSsOOLQ_Ru5gQ-1724425347-1.0.1.1-Ny4.U25nAvtSJfK2Bg0FvD7Fsm5J47UcIVAxdQWFr6EP3FadyzqZS_e_XUNz7RMhHFjivAUDDugu5QeExXu5MA' \

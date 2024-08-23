@@ -102,7 +102,7 @@ curl --location 'https://onesignal.com/api/v1/apps/APP_ID/users' \
 When sending a voip message, we are changing a parameter in the request made to Apple's servers. This change only takes place if you specify that the message you're sending is intended to be sent as "voip" using the "apns_push_type_override" parameter:
 ```shell
 curl --location 'https://onesignal.com/api/v1/notifications' \
---header 'Authorization: Bearer API_KEY' \
+--header 'Authorization: Basic API_KEY' \
 --header 'Content-Type: application/json' \
 --header 'Cookie: __cf_bm=CRiGUCcTeeTC89JSRTQ2Eu1bMQkfFVhSsOOLQ_Ru5gQ-1724425347-1.0.1.1-Ny4.U25nAvtSJfK2Bg0FvD7Fsm5J47UcIVAxdQWFr6EP3FadyzqZS_e_XUNz7RMhHFjivAUDDugu5QeExXu5MA' \
 --data '{
